@@ -9,7 +9,7 @@ import java.sql.Timestamp;
 @Setter
 public class Audit {
     @Column(name = "user_create",length = 45,nullable = true)
-    private String userCreate;
+    private Timestamp userCreate;
     @Column(name = "date_create",nullable = true)
     private Timestamp dateCreate;
     @Column(name = "user_update",length = 45,nullable = true)

@@ -16,10 +16,10 @@ public class EnterpriseEntity extends Audit {
     @Column(name = "id_enterprise")
     private int idEnterprise;
     @Column(name = "number_document", length = 15, nullable = false)
-    private String numDocument;
+    private String numberDocument;
     @Column(name = "business_name", length= 150, nullable = false)
     private String businessName;
-    @Column(name = "trade_name",length= 150, nullable = false)
+    @Column(name = "trade_name",length= 150)
     private String tradeName;
     @Column(name = "status", nullable = false)
     private int status;

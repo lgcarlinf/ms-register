@@ -11,7 +11,7 @@ public class EnterpriseValidation {
         if(requestEnterprise == null){
             return false;
         }
-        if(ETypeDocument.RUC.getValue() != requestEnterprise.getDocumentTypeEntity() ||requestEnterprise.getNumberDocument().length() != Constants.LENGTH_RUC){
+        if(ETypeDocument.RUC.getValue() != requestEnterprise.getDocumentTypeEntity() || requestEnterprise.getNumberDocument().length() != Constants.LENGTH_RUC){
             return false;
         }
         if(isNullOrEmpty(requestEnterprise.getBusinessName()) || isNullOrEmpty(requestEnterprise.getNumberDocument())){

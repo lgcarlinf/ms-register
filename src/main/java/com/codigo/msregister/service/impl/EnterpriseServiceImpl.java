@@ -75,6 +75,8 @@ public class EnterpriseServiceImpl implements EnterpriseService {
         long currentTime = System.currentTimeMillis();
         Timestamp timestamp = new Timestamp(currentTime);
         enterpriseEntity.setUserCreate(timestamp);
-        return null;
+        enterpriseEntity.setDateCreate(timestamp);
+        System.out.println(enterpriseEntity);
+        return enterpriseEntity;
     }
 }

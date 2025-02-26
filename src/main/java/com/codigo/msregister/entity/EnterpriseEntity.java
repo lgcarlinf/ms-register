@@ -1,6 +1,5 @@
 package com.codigo.msregister.entity;
 
-import com.codigo.msregister.entity.EnterpriseTypeEntity;
 import com.codigo.msregister.aggregates.model.Audit;
 import jakarta.persistence.*;
 import lombok.Getter;

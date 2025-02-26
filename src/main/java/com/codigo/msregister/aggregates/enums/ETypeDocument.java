@@ -4,8 +4,8 @@ import lombok.Getter;
 
 @Getter
 public enum ETypeDocument {
-    DNI(01),
-    RUC(02);
+    DNI(1),
+    RUC(2);
 
     private final int value;
 

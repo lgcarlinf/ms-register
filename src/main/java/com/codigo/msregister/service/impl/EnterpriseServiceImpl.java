@@ -56,7 +56,6 @@ public class EnterpriseServiceImpl implements EnterpriseService {
         return null;
     }
 
-
     private EnterpriseEntity getEntity(RequestEnterprise requestEnterprise){
         EnterpriseEntity enterpriseEntity = new EnterpriseEntity();
         enterpriseEntity.setNumberDocument(requestEnterprise.getNumberDocument());
@@ -76,7 +75,7 @@ public class EnterpriseServiceImpl implements EnterpriseService {
         Timestamp timestamp = new Timestamp(currentTime);
         enterpriseEntity.setUserCreate(timestamp);
         enterpriseEntity.setDateCreate(timestamp);
-        System.out.println(enterpriseEntity);
+
         return enterpriseEntity;
     }
 }
